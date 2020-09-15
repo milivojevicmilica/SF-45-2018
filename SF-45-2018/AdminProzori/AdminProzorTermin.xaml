@@ -1,0 +1,27 @@
+﻿<Window x:Class="SF_45_2018.AdminProzori.AdminProzorTermin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SF_45_2018.AdminProzori"
+        mc:Ignorable="d"
+        Title="AdminProzorTermin" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="280*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="dataGridTermini" HorizontalAlignment="Left" Height="247" Margin="10,10,0,0" VerticalAlignment="Top" Width="504" AutoGeneratingColumn="dataGridTermini_AutoGeneratingColumn"/>
+        <Button Background="LemonChiffon" x:Name="buttonAdd" Content="Dodaj" HorizontalAlignment="Left" Margin="10,13.714,0,0" VerticalAlignment="Top" Width="75" Click="buttonAdd_Click" Grid.Row="1"/>
+        <Button Background="LemonChiffon" x:Name="buttonRemove" Content="Obrisi" HorizontalAlignment="Left" Margin="107,13.714,0,0" VerticalAlignment="Top" Width="75" Click="buttonRemove_Click" Grid.Row="1"/>
+        <Button Background="LemonChiffon" x:Name="buttonEdit" Content="Izmeni" HorizontalAlignment="Left" Margin="204,13.714,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.492,0.575" Click="buttonEdit_Click" Grid.Row="1"/>
+        <TextBox x:Name="textBoxSearch" HorizontalAlignment="Left" Height="23" Margin="23,70.714,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
+        <Button Background="LemonChiffon" x:Name="buttonSearch" Content="Pretrazi" HorizontalAlignment="Left" Margin="423,73.714,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.492,0.575" Click="buttonSearch_Click" Grid.Row="1"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="258,71.714,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="117,71.714,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Button Background="LemonChiffon" x:Name="button" Content="Ponisti" HorizontalAlignment="Left" Margin="423,98.714,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Grid.Row="1"/>
+        <Label x:Name="label" Content="Id:" HorizontalAlignment="Left" Margin="23,44.714,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label x:Name="label_Copy" Content="Dan:" HorizontalAlignment="Left" Margin="117,44.714,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label x:Name="label_Copy1" Content="Tip nastave:" HorizontalAlignment="Left" Margin="258,40.714,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="SF_45_2018.AdminProzori.AdminProzorUstanova"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SF_45_2018.AdminProzori"
+        mc:Ignorable="d"
+        Title="AdminProzorUstanova" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <Button Background="LemonChiffon" x:Name="buttonAdd" Content="Dodaj" HorizontalAlignment="Left" Margin="384,335,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="1.8,4.175" Click="buttonAdd_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonDelete" Content="Obrisi" HorizontalAlignment="Left" Margin="546,335,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.458,-1.916" Click="buttonDelete_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonEdit" Content="Izmeni" HorizontalAlignment="Left" Margin="465,335,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-2.373,5.4" Click="buttonEdit_Click"/>
+        <TextBox x:Name="textBoxSifra" HorizontalAlignment="Left" Height="23" Margin="38,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <Button Background="LemonChiffon" x:Name="buttonSearch" Content="Pretrazi" HorizontalAlignment="Left" Margin="502,386,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-2.373,5.4" Click="buttonSearch_Click"/>
+        <DataGrid x:Name="dataGridUstanove" HorizontalAlignment="Left" Height="296" Margin="28,10,0,0" VerticalAlignment="Top" Width="620" AutoGeneratingColumn="dataGridUstanove_AutoGeneratingColumn"/>
+        <Button Background="LemonChiffon" x:Name="buttonUcionice" Content="Vidi ucionice" HorizontalAlignment="Left" Margin="255,335,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="-2.373,5.4" Click="buttonUcionice_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonZaposlenaLica" Content="Vidi zaposlena lica" HorizontalAlignment="Left" Margin="5,335,0,0" VerticalAlignment="Top" Width="137" RenderTransformOrigin="0.674,0.607" Click="buttonZaposlenaLica_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonRaspored" Content="Vidi raspored" HorizontalAlignment="Left" Margin="147,335,0,0" VerticalAlignment="Top" Width="103" RenderTransformOrigin="-2.373,5.4" Click="buttonRaspored_Click"/>
+        <TextBox x:Name="textBoxNaziv" HorizontalAlignment="Left" Height="23" Margin="199,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <TextBox x:Name="textBoxLokacija" HorizontalAlignment="Left" Height="23" Margin="356,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <Label x:Name="label" Content="Sifra ustanove:" HorizontalAlignment="Left" Margin="38,360,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Naziv ustanove:" HorizontalAlignment="Left" Margin="199,360,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Lokacija:" HorizontalAlignment="Left" Margin="356,360,0,0" VerticalAlignment="Top"/>
+        <Button Background="LemonChiffon" x:Name="button" Content="Ponisti" HorizontalAlignment="Left" Margin="583,386,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button Background="LemonChiffon" x:Name="button1" Content="Sortiraj" HorizontalAlignment="Left" Margin="653,28,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <RadioButton x:Name="radioButtonId" Content="Po sifri" HorizontalAlignment="Left" Margin="653,67,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonLokacija" Content="Po lokaciji" HorizontalAlignment="Left" Margin="653,107,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonNaziv" Content="Po nazivu" HorizontalAlignment="Left" Margin="653,87,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonBrUcionica" Content="Po max broju ucionica" HorizontalAlignment="Left" Margin="653,127,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
