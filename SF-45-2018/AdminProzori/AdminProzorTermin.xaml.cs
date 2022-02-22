@@ -70,6 +70,7 @@ namespace SF_45_2018.AdminProzori
                 }
             }
 
+
             viewTermini = CollectionViewSource.GetDefaultView(odabraniTermin);
             dataGridTermini.ItemsSource = viewTermini;
             viewTermini.Filter = CustomFilter;

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SF_45_2018.AdminProzori"
         mc:Ignorable="d"
         Title="AdminProzorUcionica" Height="450" Width="800">
-    <Grid Background="LightBlue" Margin="0,0,2,2">
+    <Grid Background="PeachPuff" Margin="0,0,2,2">
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="326" Margin="10,10,0,0" VerticalAlignment="Top" Width="669" AutoGeneratingColumn="dataGrid_AutoGeneratingColumn"/>
         <Button Background="LemonChiffon" x:Name="buttonAdd" Content="Dodaj" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="75" Click="buttonAdd_Click"/>
         <Button Background="LemonChiffon" x:Name="buttonEdit" Content="Izmeni" HorizontalAlignment="Left" Margin="199,365,0,0" VerticalAlignment="Top" Width="75" Click="buttonEdit_Click"/>

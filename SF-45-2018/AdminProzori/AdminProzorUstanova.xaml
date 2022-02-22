@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SF_45_2018.AdminProzori"
         mc:Ignorable="d"
         Title="AdminProzorUstanova" Height="450" Width="800">
-    <Grid Background="LightBlue">
+    <Grid Background="PeachPuff">
         <Button Background="LemonChiffon" x:Name="buttonAdd" Content="Dodaj" HorizontalAlignment="Left" Margin="384,335,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="1.8,4.175" Click="buttonAdd_Click"/>
         <Button Background="LemonChiffon" x:Name="buttonDelete" Content="Obrisi" HorizontalAlignment="Left" Margin="546,335,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.458,-1.916" Click="buttonDelete_Click"/>
         <Button Background="LemonChiffon" x:Name="buttonEdit" Content="Izmeni" HorizontalAlignment="Left" Margin="465,335,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-2.373,5.4" Click="buttonEdit_Click"/>

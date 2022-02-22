@@ -35,12 +35,14 @@ namespace SF_45_2018.EditProzori
         private List<Ucionica> ucioniceUOdabranojUstanovi;
         private Termin selectedTerminCopy;
         private List<Termin> listaTerminaCopy;
+        
 
         public TerminiEditProzor(Termin termin)
         {
             InitializeComponent();
 
             OsveziProzor();
+            opisVanrednog.Visibility = Visibility.Hidden;
 
             listaTerminaCopy = new List<Termin>();
             listaTerminaCopy.AddRange(PodaciTermin.listaTermina);
@@ -72,7 +74,11 @@ namespace SF_45_2018.EditProzori
             };
 
             comboBoxTipNastave.ItemsSource = new List<ETipNastave>() { ETipNastave.Predavanja, ETipNastave.Vezbe };
+            if (checkBoxVanredno.IsChecked == true)
+            {
+                opisVanrednog.Visibility = Visibility.Visible;
 
+            }
             if (PodaciKorisnik.AktivniKorisnik.TipKorisnika.Equals(ETipKorisnika.ADMIN))
             {
                 
@@ -88,6 +94,7 @@ namespace SF_45_2018.EditProzori
                 }
 
                 comboBoxZaduzenaOsoba.ItemsSource = listaPredavaca;
+                
             }
 
             else if (PodaciKorisnik.AktivniKorisnik.TipKorisnika.Equals(ETipKorisnika.PROFESOR))

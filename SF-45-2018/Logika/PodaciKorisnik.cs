@@ -337,17 +337,17 @@ KorisnickoIme=@KorisnickoIme, Email=@Email, TipKorisnika=@TipKorisnika, Lozinka=
         }
 
 
-        public static bool ValidirajKorisnika(string username, string password)
+        public static bool ValidirajKorisnika(string username, string password,ETipKorisnika tip)
         {
             bool result = false;
-            
+            ETipKorisnika type = new ETipKorisnika();
 
             foreach (Korisnik kor in listaKorisnika)
             {
-                if (kor.KorisnickoIme.Equals(username) && kor.Lozinka.Equals(password) )
+                if (kor.KorisnickoIme.Equals(username) && kor.Lozinka.Equals(password) && kor.TipKorisnika.Equals(tip) )
                 {
                     result = true;
-                   
+                    type = kor.TipKorisnika;
                 }
             }
 

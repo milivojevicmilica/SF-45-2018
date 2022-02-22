@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:SF_45_2018"
         mc:Ignorable="d"
         Title="ProzorIzbor" Height="450" Width="800">
-    <Grid Background="LightBlue">
-        <Button Background="LemonChiffon"  x:Name="buttonKorisnici" Content="Upravljaj korisnicima" HorizontalAlignment="Left" Margin="282,82,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonKorisnici_Click"/>
-        <Button Background="LemonChiffon" x:Name="buttonUcionice" Content="Upravljaj terminima" HorizontalAlignment="Left" Margin="282,237,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonUcionice_Click"/>
-        <Button Background="LemonChiffon" x:Name="buttonUstanove" Content="Upravljaj ustanovama" HorizontalAlignment="Left" Margin="282,160,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonUstanove_Click"/>
-        <Button Background="LemonChiffon" x:Name="buttonRaspored" Content="Vidi raspored" HorizontalAlignment="Left" Margin="282,318,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonRaspored_Click"/>
+    <Grid Background="PeachPuff">
+        <Button Background="LemonChiffon"  x:Name="buttonKorisnici" Content="Upravljaj korisnicima" HorizontalAlignment="Left" Margin="132,76,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonKorisnici_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonUcionice" Content="Upravljaj terminima" HorizontalAlignment="Left" Margin="132,203,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonUcionice_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonUstanove" Content="Upravljaj ustanovama" HorizontalAlignment="Left" Margin="476,76,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonUstanove_Click"/>
+        <Button Background="LemonChiffon" x:Name="buttonRaspored" Content="Vidi raspored" HorizontalAlignment="Left" Margin="476,203,0,0" VerticalAlignment="Top" Width="182" Height="48" Click="buttonRaspored_Click"/>
 
     </Grid>
 </Window>

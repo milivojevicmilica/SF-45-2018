@@ -60,26 +60,31 @@
         </Style>
 
     </Window.Resources>
-    <Grid Background="LightBlue">
-        <Label x:Name="label_Copy" Content="Vreme pocetka:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy1" Content="Vreme kraja:" HorizontalAlignment="Left" Margin="26,73,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy2" Content="Dan u nedelji:" HorizontalAlignment="Left" Margin="28,122,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy3" Content="Tip nastave:" HorizontalAlignment="Left" Margin="262,164,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextBoxVremePocetka"  HorizontalAlignment="Left" Height="23" Margin="144,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Path = VremeZauzecaPocetak,UpdateSourceTrigger=Explicit , StringFormat=t}"/>
-        <ComboBox x:Name="comboBoxDanUNed" HorizontalAlignment="Left" Margin="144,126,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=DaniUNedelji, UpdateSourceTrigger=Explicit}"/>
-        <ComboBox x:Name="comboBoxTipNastave" HorizontalAlignment="Left" Margin="370,164,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=TipNastave}"/>
-        <Button Background="LemonChiffon" x:Name="buttonOk" Content="OK" HorizontalAlignment="Left" Margin="36,322,0,0" VerticalAlignment="Top" Width="75" Click="buttonOk_Click"/>
-        <Button Background="LemonChiffon" x:Name="buttonCancel" Content="Otkazi" HorizontalAlignment="Left" Margin="177,322,0,0" VerticalAlignment="Top" Width="75" Click="buttonCancel_Click"/>
-        <TextBox x:Name="TextBoxVremeKraja" HorizontalAlignment="Left" Height="23" Margin="144,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding VrijemeZauzecaKraj, UpdateSourceTrigger=Explicit , StringFormat=t}"/>
-        <ComboBox x:Name="comboBoxZaduzenaOsoba" HorizontalAlignment="Left" Margin="370,119,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=ZaduzeniPredavac}"/>
-        <Label x:Name="Zaduzena_Osoba_" Content="Predavac:" HorizontalAlignment="Left" Margin="281,119,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBoxUstanova" HorizontalAlignment="Left" Margin="370,32,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=Ustanova}" DropDownClosed="comboBoxUstanova_DropDownClosed_1"/>
-        <ComboBox x:Name="comboBoxUcionica" HorizontalAlignment="Left" Margin="370,73,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=Ucionica}"/>
-        <Label x:Name="labelUstanova" Content="Ustanova:" HorizontalAlignment="Left" Margin="281,32,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelUcionica" Content="Ucionica:" HorizontalAlignment="Left" Margin="283,73,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBoxVanredno" Content="Vanredni termin" HorizontalAlignment="Left" Margin="30,213,0,0" VerticalAlignment="Top"/>
-        
+    <Grid Background="PeachPuff">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="694*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label_Copy" Content="Vreme pocetka:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy1" Content="Vreme kraja:" HorizontalAlignment="Left" Margin="26,73,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy2" Content="Dan u nedelji:" HorizontalAlignment="Left" Margin="28,122,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy3" Content="Tip nastave:" HorizontalAlignment="Left" Margin="162.656,164,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxVremePocetka"  HorizontalAlignment="Left" Height="23" Margin="44.656,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Path = VremeZauzecaPocetak,UpdateSourceTrigger=Explicit , StringFormat=t}" Grid.Column="1"/>
+        <ComboBox x:Name="comboBoxDanUNed" HorizontalAlignment="Left" Margin="44.656,126,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=DaniUNedelji, UpdateSourceTrigger=Explicit}" Grid.Column="1"/>
+        <ComboBox x:Name="comboBoxTipNastave" HorizontalAlignment="Left" Margin="270.656,164,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=TipNastave}" Grid.Column="1"/>
+        <Button Background="LemonChiffon" x:Name="buttonOk" Content="OK" HorizontalAlignment="Left" Margin="36,322,0,0" VerticalAlignment="Top" Width="75" Click="buttonOk_Click" Grid.ColumnSpan="2"/>
+        <Button Background="LemonChiffon" x:Name="buttonCancel" Content="Otkazi" HorizontalAlignment="Left" Margin="77.656,322,0,0" VerticalAlignment="Top" Width="75" Click="buttonCancel_Click" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxVremeKraja" HorizontalAlignment="Left" Height="23" Margin="44.656,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding VrijemeZauzecaKraj, UpdateSourceTrigger=Explicit , StringFormat=t}" Grid.Column="1"/>
+        <ComboBox x:Name="comboBoxZaduzenaOsoba" HorizontalAlignment="Left" Margin="270.656,119,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=ZaduzeniPredavac}" Grid.Column="1"/>
+        <Label x:Name="Zaduzena_Osoba_" Content="Predavac:" HorizontalAlignment="Left" Margin="181.656,119,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <ComboBox x:Name="comboBoxUstanova" HorizontalAlignment="Left" Margin="270.656,32,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=Ustanova}" DropDownClosed="comboBoxUstanova_DropDownClosed_1" Grid.Column="1"/>
+        <ComboBox x:Name="comboBoxUcionica" HorizontalAlignment="Left" Margin="270.656,73,0,0" VerticalAlignment="Top" Width="120" SelectedItem="{Binding Path=Ucionica}" Grid.Column="1"/>
+        <Label x:Name="labelUstanova" Content="Ustanova:" HorizontalAlignment="Left" Margin="181.656,32,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="labelUcionica" Content="Ucionica:" HorizontalAlignment="Left" Margin="183.656,73,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox x:Name="checkBoxVanredno" Content="Vanredni termin" HorizontalAlignment="Left" Margin="30,213,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox  x:Name="opisVanrednog" HorizontalAlignment="Left" Height="23" Margin="77.656,211,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1" />
 
-        
+
+
     </Grid>
 </Window>

@@ -45,7 +45,7 @@ namespace SF_45_2018
             PodaciKorisnik.UcitajKorisnike();
             PodaciTermin.UcitajTermine();
             PodaciRaspored.UcitajRaspored();
-
+            comboBox.ItemsSource = new List<ETipKorisnika>() { ETipKorisnika.ASISTENT, ETipKorisnika.PROFESOR, ETipKorisnika.ADMIN };
         }
 
         private void buttonLogin_Click(object sender, RoutedEventArgs e)
@@ -53,16 +53,16 @@ namespace SF_45_2018
 
 
 
-            if (!(String.IsNullOrEmpty(textBoxKorIme.Text)) && !(String.IsNullOrEmpty(passwordBox.Password)) )
+            if (!(String.IsNullOrEmpty(textBoxKorIme.Text)) && !(String.IsNullOrEmpty(passwordBox.Password)) &&  comboBox.SelectedIndex >=0 )
             {
 
-                bool logovanjeUspesno = PodaciKorisnik.ValidirajKorisnika(textBoxKorIme.Text, passwordBox.Password);
+                bool logovanjeUspesno = PodaciKorisnik.ValidirajKorisnika(textBoxKorIme.Text, passwordBox.Password,(ETipKorisnika)comboBox.SelectedItem);
 
                 if (logovanjeUspesno == true)
                 {
                     Korisnik kor = PodaciKorisnik.PretraziPoKorImenu(textBoxKorIme.Text);
                     
-                    if (kor.TipKorisnika.Equals(ETipKorisnika.ADMIN))
+                    if (comboBox.SelectedItem.Equals(ETipKorisnika.ADMIN))
                     {
                         PodaciKorisnik.AktivniKorisnik = new Administrator();
                         PodaciKorisnik.AktivniKorisnik = kor as Administrator;
@@ -71,7 +71,7 @@ namespace SF_45_2018
                         prozorIzbor.ShowDialog();
 
                     }
-                    else if (kor.TipKorisnika.Equals(ETipKorisnika.PROFESOR))
+                    else if (comboBox.SelectedItem.Equals(ETipKorisnika.PROFESOR))
                     {
 
                         PodaciKorisnik.AktivniKorisnik = new Profesor();
@@ -81,7 +81,7 @@ namespace SF_45_2018
                         profesorAsistentProzor.ShowDialog();
 
                     }
-                    else if (kor.TipKorisnika.Equals(ETipKorisnika.ASISTENT))
+                    else if (comboBox.SelectedItem.Equals(ETipKorisnika.ASISTENT))
                     {
                         PodaciKorisnik.AktivniKorisnik = new Asistent();
                         PodaciKorisnik.AktivniKorisnik = kor as Asistent;

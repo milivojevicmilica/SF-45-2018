@@ -26,7 +26,7 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid Background="LightBlue">
+    <Grid Background="PeachPuff">
         <Label x:Name="labelBrojUcionice" Content="Broj ucionice:" HorizontalAlignment="Left" Margin="28,104,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5"></Label>
         <Label x:Name="labelbrojMesta" Content="Broj mesta:" HorizontalAlignment="Left" Margin="38,152,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.75,0.533"></Label>
         <Label x:Name="labelTip" Content="Tip ucionice:" HorizontalAlignment="Left" Margin="38,199,0,0" VerticalAlignment="Top" Width="100"/>

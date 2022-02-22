@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:SF_45_2018"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="image/maxresdefault.png"/>
+    </Window.Background>
     <Window.Resources>
         <Style x:Key="TriggerStyle">
             <Style.Triggers>
@@ -18,7 +21,7 @@
         </Style>
     </Window.Resources>
 
-    <Grid Background="LightBlue" HorizontalAlignment="Left" Width="790">
+    <Grid  HorizontalAlignment="Left" Width="790">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="400*"/>
                 <ColumnDefinition Width="400*"/>
@@ -29,10 +32,12 @@
             </Grid.RowDefinitions>
             <Label x:Name="labelUsername" Foreground="Black" Content="Korisnicko Ime:" HorizontalAlignment="Left" Margin="43,46,0,0" VerticalAlignment="Top" Height="30" Width="104" Grid.Column="0"/>
             <Label x:Name="labelPassword" Foreground="Black" Content="Lozinka:" HorizontalAlignment="Left" Margin="43,77,0,0" VerticalAlignment="Top" Height="30" Width="55" Grid.Column="0" RenderTransformOrigin="0.691,0.567"/>
+            <Label x:Name="labelTipKorisnika" Foreground="Black" Content="TipKorisnika:" HorizontalAlignment="Left" Margin="53,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.587,-1.061" Height="30" Width="94" Grid.Column="0"/>
             <Button Background="LemonChiffon" x:Name="buttonLogin" Content="Prijavi se" HorizontalAlignment="Left" Margin="184,147,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.09,0.979" Click="buttonLogin_Click" IsDefault="True" Height="24" Grid.Column="0"/>
+            
             <TextBox x:Name="textBoxKorIme" TabIndex="0" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="161,46,0,0" Grid.Column="0" RenderTransformOrigin="-0.308,-0.577"/>
             <TextBlock x:Name="textBlock" FontSize="14" FontWeight="Bold" Style="{StaticResource TriggerStyle}" HorizontalAlignment="Left" Margin="43,176,0,0" TextWrapping="Wrap" Text="Nastavi kao gost" VerticalAlignment="Top" Width="155" Height="22" MouseDown="textBlock_MouseDown"/>
             <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="161,77,0,0" VerticalAlignment="Top" Width="120" Height="25" TabIndex="1"/>
-
-        </Grid>
+            <ComboBox  x:Name="comboBox" TabIndex="3" HorizontalAlignment="Left" Margin="161,107,0,0" VerticalAlignment="Top" Width="120" Height="26" Grid.Column="0"/>
+    </Grid>
 </Window>

@@ -26,7 +26,7 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid Background="LightBlue">
+    <Grid Background="PeachPuff">
         <Label x:Name="labelIme" Content="Ime:" HorizontalAlignment="Left" Margin="54,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.812,0.462" Height="38"/>
         <Label x:Name="lebelPrezime" Content="Prezime:" HorizontalAlignment="Left" Margin="31,101,0,0" VerticalAlignment="Top" Height="38"/>
         <Label x:Name="labelEmail" Content="E-mail:" HorizontalAlignment="Left" Margin="278,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,3.301" Height="38"/>

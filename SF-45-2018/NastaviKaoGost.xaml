@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SF_45_2018"
         mc:Ignorable="d"
         Title="NastaviKaoGost" Height="450" Width="800">
-    <Grid Background="LightBlue">
+    <Grid Background="PeachPuff">
         
         <TextBox x:Name="textBoxSifra" HorizontalAlignment="Left" Height="23" Margin="38,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
         <Button Background="LemonChiffon" x:Name="buttonSearch" Content="Pretrazi" HorizontalAlignment="Left" Margin="502,386,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-2.373,5.4" Click="buttonSearch_Click"/>

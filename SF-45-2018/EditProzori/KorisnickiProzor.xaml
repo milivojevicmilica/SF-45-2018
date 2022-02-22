@@ -28,7 +28,7 @@
         </Style>
 
     </Window.Resources>
-    <Grid Background="LightBlue">
+    <Grid Background="PeachPuff">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>

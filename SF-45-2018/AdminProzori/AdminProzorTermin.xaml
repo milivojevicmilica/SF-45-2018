@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SF_45_2018.AdminProzori"
         mc:Ignorable="d"
         Title="AdminProzorTermin" Height="450" Width="800">
-    <Grid Background="LightBlue">
+    <Grid Background="PeachPuff">
         <Grid.RowDefinitions>
             <RowDefinition Height="280*"/>
             <RowDefinition Height="139*"/>

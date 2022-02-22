@@ -26,7 +26,7 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid Background="LightBlue" Margin="0,0,2,1">
+    <Grid Background="PeachPuff" Margin="0,0,2,1">
         <Label x:Name="labelbrUcionica" Content="Broj ucionica:" HorizontalAlignment="Left" Margin="30,156,0,0" VerticalAlignment="Top" Width="109"/>
         <Label x:Name="labelLokacija" Content="Lokacija:" HorizontalAlignment="Left" Margin="52,109,0,0" VerticalAlignment="Top" Width="82"/>
         <Label x:Name="labelNaziv" Content="Naziv:" HorizontalAlignment="Left" Margin="57,69,0,0" VerticalAlignment="Top" Width="82"/>
